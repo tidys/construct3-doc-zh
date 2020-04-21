@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [说明](README.md)
 ## Construct3
 - [初学者教程](./doc/beginner-guide.md)
 - [添加对象](./doc/object.md)

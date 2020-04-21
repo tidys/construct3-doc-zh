@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node:8.9.4
+    steps:
+      - checkout
+      - run: sudo npm install --unsafe-perm -g gitbook-cli
+      - run: sudo npm install --unsafe-perm -g git-directory-deploy
+#      - run: gitbook install
+      - run: gitbook build
+      - run: git config --global user.email $GH_EMAIL
+      - run: git config --global user.name $GH_NAME
+      - run: git-directory-deploy --directory _book --branch gh-pages --message "circleci-auto"
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only: master
