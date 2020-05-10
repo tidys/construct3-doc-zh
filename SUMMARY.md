@@ -8,7 +8,7 @@
 - [添加事件](./doc/event.md)
 - [添加游戏逻辑](./doc/logic.md)
 - [使用变量](./doc/variables.md)
-- [记分](./doc/keeping-score.md)
+- [记录分数](./doc/keeping-score.md)
 - [显示分数](./doc/display-score.md)
 - [完成](./doc/finish.md)
 
