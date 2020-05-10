@@ -1,0 +1,43 @@
+{
+  "title": "Construct3中文翻译文档",
+  "author": "xu_yanfeng",
+  "description": "Construct3中文翻译文档",
+  "extension": null,
+  "generator": "site",
+  "language": "zh-hans",
+  "isbn": "",
+  "plugins": [
+    "-lunr",
+    "-search",
+    "github-issue-feedback",
+    "search-title",
+    "anchorjs",
+    "splitter",
+    "expandable-chapters-small",
+    "github"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/tidys/construct3-doc-zh"
+    },
+    "github-issue-feedback": {
+      "repo": "tidys/construct3-doc-zh",
+      "branch": "master"
+    },
+    "search": {
+      "maxIndexSize": 1000000000
+    },
+    "lunr": {
+      "maxIndexSize": 1000000000
+    }
+  },
+  "links": {
+    "sharing": {
+      "all": null,
+      "facebook": null,
+      "google": null,
+      "twitter": null,
+      "weibo": null
+    }
+  }
+}

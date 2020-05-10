@@ -10,10 +10,10 @@
 
 下图是图层栏，在默认的面板布局中，它是在屏幕的右下角：
 
-![](variable/c27e71b2.png)
+![](../res/variable/c27e71b2.png)
 
 右键单击图层，选择`add layer at top`创建新图层，新图层名字叫做`分数`
-![](variable/6adeab57.png)
+![](../res/variable/6adeab57.png)
 
 # Parallax属性
 
@@ -21,7 +21,7 @@
 
 这里我们不希望`分数`图层移动，`分数`图层应该始终在屏幕的固定位置，所以设置Parallax(视差)为0即可。
 
-![](variable/b511197e.png)
+![](../res/variable/b511197e.png)
 
 注意，在设置图层属性的时候，请务必确认选中正确的图层。
 
@@ -31,20 +31,20 @@
 
 双击空白区域，这次我们添加`Text`对象
 
-![](variable/1ce81476.png)
+![](../res/variable/1ce81476.png)
 
 将text对象放在布局的左上角，然后调整属性，设置为粗体，斜体，黄色，并选择一个稍微大点的字体。
 
-![](variable/8713382f.png)
+![](../res/variable/8713382f.png)
 
 调整宽度，保证所有文本都能显示。
 
-![](variable/9f71773f.png)
+![](../res/variable/9f71773f.png)
 
 切换到事件表中，我们需要及时更新玩家的分数，在前面添加的`Every tick`事件中，对分数对象添加`set Text`。
-![](variable/baefe4a9.png)
+![](../res/variable/baefe4a9.png)
 
-![](variable/546c7285.png)
+![](../res/variable/546c7285.png)
 
 使用`&`，我们可以将一个数字转换为文本，并将其连接到另一个文本字符串。因此，我们可以这样输入`"分数："&分数`
 
@@ -53,7 +53,7 @@
 
 最终事件修改如下图所示：
 
-![](variable/3d6ebf1d.png)
+![](../res/variable/3d6ebf1d.png)
 
 运行游戏，每次击杀一个怪物，你的分数就会及时刷新，并且分数始终在屏幕的固定位置。
 

@@ -23,15 +23,15 @@
 
 点击选中玩家对象，在属性栏中会发现有`Behaviors`(行为)分类，点击`Behaviors`链接，编辑器将打开如图的行为对话框界面：
 
-![](behaviors/39ac9eac.png)
+![](../res/behaviors/39ac9eac.png)
 
 点击`Add new behavior`，双击`8 Direction`行为完成添加：
 
 
-![](behaviors/d65f236f.png)
+![](../res/behaviors/d65f236f.png)
 
 再次执行同样的操作，这次添加`ScrollTo`行为，使屏幕始终跟随玩家，然后再添加`BoundToLayout`行为，使玩家的活动范围仅限指定的区域。最终你的行为对话框应该如下图所示：
-![](behaviors/afda420e.png)
+![](../res/behaviors/afda420e.png)
 
 
 关闭行为对话框，现在我们尝试着按`Preview`来预览下游戏效果，你可以使用方向键来移动玩家，并且屏幕会跟随玩家的移动。并且因为`BoundToLayout`的原因，玩家不能移动到布局外。
@@ -54,7 +54,7 @@
 如果你运行游戏后会发现子弹和怪物的移动速度一样快，让我们调慢一点怪物的移动速度。
 
 选择怪物对象，注意，此时的属性栏因为已经添加了`Bullet Movement`行为，里面出现了一些额外的属性：
-![](behaviors/96da4869.png)
+![](../res/behaviors/96da4869.png)
 
 在这里我们就可以调整行为的具体参数，我们将`Speed`(速度)从400调整为80（以每秒移动的像素为单位）。
 
@@ -69,7 +69,7 @@
 
 最终的效果如图所示:
 
-![](behaviors/495d7793.png)
+![](../res/behaviors/495d7793.png)
 
 
 对象的本质是对象的类别。在事件系统中，主要处理的就是对象。

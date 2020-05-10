@@ -26,7 +26,7 @@
 添加动作：`玩家->Spawn another object`，选择子弹对象，使用默认参数即可。
 
 操作完毕后，事件列表应该如下图所示：
-![](more-logic/f33bcc65.png)
+![](../res/more-logic/f33bcc65.png)
 
 此时如果你运行游戏，就可以射击子弹了。
 
@@ -35,28 +35,28 @@
 我们可以在枪口放一个图像点，图像点只是图像上的一个位置，方便我们从这个位置生成新的对象，我们在`Spawn another object`动作中引用这个位置即可。
 
 在项目栏(project bar)中右击玩家对象，选择`Edit animations`(编辑动画):
-![](more-logic/806b9733.png)
+![](../res/more-logic/806b9733.png)
 
 在图像编辑面板中，单击图像点工具：
 
 
-![](more-logic/db794bee.png)
+![](../res/more-logic/db794bee.png)
 
 
 注意观察`Image Points`面板，里面列出了所有的图像点：
-![](more-logic/13bea766.png)
+![](../res/more-logic/13bea766.png)
 
 其中`Origin`是图像默认的原点，当物体进行旋转时，就会围绕`Origin`来旋转。
 
 这里我们不使用`Origin`，右键新建一个图像点
 
-![](more-logic/6f441a83.png)
+![](../res/more-logic/6f441a83.png)
 
 然后将点设置到枪口，如下图所示
-![](more-logic/9fa57e66.png)
+![](../res/more-logic/9fa57e66.png)
 
 关闭图像编辑器，在`event sheet`中双击修改`Spawn an object`动作，并将图像点修改为1：
-![](more-logic/5dc1a91c.png)
+![](../res/more-logic/5dc1a91c.png)
 注意，这里的`1`表示第几个图像点，并不是图像点的名字。
 
 再次预览游戏，子弹就从枪口中射出来了。虽然子弹现在还不能击杀怪物，不过，一旦你理解了事件系统，就可以很快的组织好你想要的逻辑。
@@ -72,14 +72,14 @@
 添加动作：`子弹->Destroy`
 
 最终完成效果如图所示：
-![](more-logic/b8d648ae.png)
+![](../res/more-logic/b8d648ae.png)
 
 预览游戏，射击一个怪物，你会发现爆炸有个黑色的边框！
 
-![](more-logic/cfb471da.png)
+![](../res/more-logic/cfb471da.png)
 
 我们单击项目栏中的爆炸对象，修改`Effect`的混合模式为`Additive(叠加)`即可。
-![](more-logic/b94e7dfe.png)
+![](../res/more-logic/b94e7dfe.png)
 
 再次运行游戏，爆炸就正常了。
 
@@ -103,7 +103,7 @@
 
 最终的完成样子如下图：
 
-![](more-logic/88ba57e4.png)
+![](../res/more-logic/88ba57e4.png)
 
 运行游戏，你如果停留一段时间，你就会发现怪物会停留在布局的边缘，并且它们随机朝向一个方向。
 现在点击鼠标左键，就会射击子弹，如果子弹碰到怪物就会立刻击杀怪物，如果我希望怪物被子弹击中5次才会死亡，那么该怎么做呢？我们可以使用变量来做到！

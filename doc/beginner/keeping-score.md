@@ -6,14 +6,14 @@
 
 右击事件底部的空白部分，选择`add global variable`
 
-![](variable/b275df4d.png)
+![](../res/variable/b275df4d.png)
 
 名字我们输入`分数`，初始化设置为0，其他字段默认即可。
 
-![](variable/8ea0c11b.png)
+![](../res/variable/8ea0c11b.png)
 
 创建完成后，全局变量在事件中显示为一行，在这个事件表单中，任何事件都可以访问这个变量
-![](variable/aac69a98.png)
+![](../res/variable/aac69a98.png)
 
 让我们再修改下事件，当怪物的生命值<=0时，
 
@@ -21,6 +21,6 @@
 
 最终事件如下图所示：
 
-![](variable/c85f3028.png)
+![](../res/variable/c85f3028.png)
 
 现在，每次杀死一个怪物，分数就会+1，但是这个分数并没有在游戏中显示，下一节我们会用一个文本来展示这个分数。
