@@ -6,20 +6,20 @@ const BEHAVIOR_ID = "MyCompany_MyAddon";
 const BEHAVIOR_VERSION = "1.0.0.0";
 const BEHAVIOR_CATEGORY = "general";
 ```
-- BEHAVIOR_ID
+### BEHAVIOR_ID
 必须和`addon.json`中ID的值相同
 
-- BEHAVIOR_VERSION
+### BEHAVIOR_VERSION
 必须和`addon.json`中version的值相同
 
-## BEHAVIOR_CATEGORY
+### BEHAVIOR_CATEGORY
 当在对话框中添加behavior，展示的行为类别，
 可选值为：
 - attributes
 - general
 - movements
 - other
-
+ 
 
 ```
 class MyCustomBehavior extends SDK.IBehaviorBase {

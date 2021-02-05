@@ -1,6 +1,6 @@
 plugin.js是插件中比较重要的配置
 
-# 插件常量
+# 常量
 
 ```
 const PLUGIN_ID = "MyCompany_MyAddon";
@@ -8,24 +8,27 @@ const PLUGIN_VERSION = "1.0.0.0";
 const PLUGIN_CATEGORY = "general";
 ```
 
-## PLUGIN_ID
+### PLUGIN_ID
 插件的唯一标识，必须和`addon.json`中的值相同，请尽量避免反复修改
 
-## PLUGIN_VERSION
+### PLUGIN_VERSION
 插件版本号，必须和`addon.json`中的值相同
 
-## PLUGIN_CATEGORY
+### PLUGIN_CATEGORY
 插件的类别，当创建一个新的对象类型时，会显示
 可选的值为：
-- data-and-storage
-- form-controls
-- general
-- input 
-- media 
-- monetisation
-- platform-specific
-- web
-- other
+
+| value | desc |
+| ---- | ---- |
+|`data-and-storage`|-|
+|`form-controls`|-|
+|`general`|-|
+|`input`|-|
+|`media`|-|
+|`monetisation`|-|
+|`platform-specific`|-|
+|`web`|-|
+|`other`|-| 
 
 ## 插件的主类
 ```

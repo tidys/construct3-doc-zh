@@ -16,11 +16,10 @@ JavaScript SDK允许开发者开发自己的Construct3插件，在插件里面�
 
 ![](res/3dce0abe.png)
 
-在开发插件的时候，在本地HTTP服务器上使用[Develop Mode]()，可以提高开发效率
+在开发插件的时候，在本地HTTP服务器上使用[开发模式](./guide/develop-mode.md)，可以提高开发效率
 
 ## 自定义导入器API
-[aa](doc/plugin/res/customimportersampledata.zip)
-插件SDK中包含了一个使用自定义导入器的例子
+[这个插件](doc/plugin/res/customimportersampledata.zip)包含了一个使用自定义导入器的例子
 你可以直接将这个插件拖放到Construct3中，就能看到插件是如何读取自定义格式的。
 
 ## 你需要掌握web技能

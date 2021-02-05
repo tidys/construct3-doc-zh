@@ -1,7 +1,7 @@
 actions、conditions、expressions简称ACE，用来指一个动作、条件、表达式。
 
 
-``
+```
 {
     'ace1': {
         'conditions': [],
@@ -9,7 +9,7 @@ actions、conditions、expressions简称ACE，用来指一个动作、条件、�
         'expressions': []
     }
 }
-``
+```
 每个key都是类别ID，在编辑器中显示的字符，会从语言文件中查找
 
 ACE中的每条数据都是一个json
