@@ -40,3 +40,18 @@ this._info.SetProperties([
 	new SDK.PluginProperty("integer", "test-property", 0)
 ]);
 ```
+
+- 在对象实例属性中，点击添加`behavior`
+![](res/654536a0.png)
+
+![](res/e5836318.png)
+
+- 在常规中就会发现插件定义的`behavior`
+![](res/36a3f112.png)
+
+- 双击即可添加
+![](res/4f025911.png)
+
+在刚才的对象实例属性中，即可看到这个`behavior`
+
+![](res/8adb6af2.png)

@@ -37,7 +37,7 @@ ACE最小数据
 - highlight：设置为 true 以突出显示条件/操作/表达式选择器对话框中的 ACE。这应该只用于最常用的 ace，以帮助用户从列表中轻松地挑出它们
 - params: 参数
 
-Condition特有的属性
+## Condition特有的属性
 - isTrigger：指定触发器条件。这将在事件表中显示箭头。触发器只有在它们是由运行时调用触发的明确时才运行，而不是计算每个滴答
 
 - isFakeTrigger：指定一个假的触发器。这看起来与事件表中的触发器完全相同，但实际上是每隔计算一次。这对于对于单一刻度为真的条件非常有用，例如对于必须每刻度轮询一个值的 api
@@ -47,10 +47,10 @@ Condition特有的属性
 - isInvertible：允许条件在事件表中被反转。设置为false关闭逆变装置
 - isCompatibleWithTriggers： 
 
-Action特有属性
+## Action特有属性
 - isAsync：将 action 标记为异步操作
 
-Expression特有属性
+## Expression特有属性
 - expressionName 
 - returnType："number", "string", "any"
 - isVariadicParameters ：是否允许用户输入任意数量的参数
