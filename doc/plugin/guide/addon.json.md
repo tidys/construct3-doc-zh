@@ -48,3 +48,8 @@ addon.json中定义了详细的插件信息
 ```
 ## effect类型插件的配置
 当你在开发type为`effect`类型的插件时，`addon.json`中有关的字段配置，[参考这里](./addon.effect.md)
+
+### 新添加的插件可以在这里看到
+![](res/6025e6f6.png)
+
+
