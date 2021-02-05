@@ -1,0 +1,594 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>插件结构 · Construct3中文翻译文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xu_yanfeng">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="addon.json.html" />
+    
+    
+    <link rel="prev" href="../home.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../beginner/">
+            
+                <a href="../../beginner/">
+            
+                    
+                    新手指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../beginner/beginner-guide.html">
+            
+                <a href="../../beginner/beginner-guide.html">
+            
+                    
+                    初学者教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../beginner/object.html">
+            
+                <a href="../../beginner/object.html">
+            
+                    
+                    添加对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../beginner/behaviors.html">
+            
+                <a href="../../beginner/behaviors.html">
+            
+                    
+                    添加行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../beginner/event.html">
+            
+                <a href="../../beginner/event.html">
+            
+                    
+                    添加事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../beginner/logic.html">
+            
+                <a href="../../beginner/logic.html">
+            
+                    
+                    添加游戏逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../beginner/variables.html">
+            
+                <a href="../../beginner/variables.html">
+            
+                    
+                    使用变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../beginner/keeping-score.html">
+            
+                <a href="../../beginner/keeping-score.html">
+            
+                    
+                    记录分数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../beginner/display-score.html">
+            
+                <a href="../../beginner/display-score.html">
+            
+                    
+                    显示分数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../beginner/finish.html">
+            
+                <a href="../../beginner/finish.html">
+            
+                    
+                    完成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../document/">
+            
+                <a href="../../document/">
+            
+                    
+                    官方完整手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../document/Home.html">
+            
+                <a href="../../document/Home.html">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../document/behaviors-reference.html">
+            
+                <a href="../../document/behaviors-reference.html">
+            
+                    
+                    行为参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../document/plugin.html">
+            
+                <a href="../../document/plugin.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../home.html">
+            
+                <a href="../home.html">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="c3addon.html">
+            
+                <a href="c3addon.html">
+            
+                    
+                    插件结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="addon.json.html">
+            
+                <a href="addon.json.html">
+            
+                    
+                    addon.json
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="addon.effect.html">
+            
+                <a href="addon.effect.html">
+            
+                    
+                    effect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="plugin.js.html">
+            
+                <a href="plugin.js.html">
+            
+                    
+                    plugin.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="behavior.js.html">
+            
+                <a href="behavior.js.html">
+            
+                    
+                    behavior.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="aces.json.html">
+            
+                <a href="aces.json.html">
+            
+                    
+                    aces.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="develop-mode.html">
+            
+                <a href="develop-mode.html">
+            
+                    
+                    插件开发调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >插件结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Construct3&#x63D2;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;&#x662F;<code>.c3addon</code>&#xFF0C;&#x672C;&#x8D28;&#x4E0A;&#x548C;<code>zip</code>&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x533A;&#x522B;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x67E5;&#x770B;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x4E00;&#x6837;&#x67E5;&#x770B;&#x63D2;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="&#x63D2;&#x4EF6;&#x7ED3;&#x6784;">&#x63D2;&#x4EF6;&#x7ED3;&#x6784;</h2>
+<ul>
+<li>c2runtime&#xFF1A;construct2&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x5E38;&#x53EA;&#x5305;&#x542B;runtime.js&#x3002;</li>
+<li>c3runtime: construct3&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x6587;&#x4EF6;&#x3002;</li>
+<li>lang<ul>
+<li>en-US.json &#xFF1A;&#x8BED;&#x8A00;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x663E;&#x793A;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x754C;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x3002;</li>
+</ul>
+</li>
+<li>aces.json&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;<code>actions(&#x884C;&#x4E3A;)</code>&#x3001;<code>conditions(&#x6761;&#x4EF6;)</code>&#x3001;<code>expressions(&#x8868;&#x8FBE;&#x5F0F;)</code>  </li>
+<li>addon.json&#xFF1A;
+  &#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x63D2;&#x4EF6;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8BE6;&#x7EC6;&#x5B57;&#x6BB5;&#x53C2;&#x8003;<a href="addon.json.html">&#x63D2;&#x4EF6;&#x4FE1;&#x606F;</a></li>
+<li>icon.svg&#xFF1A;&#x63D2;&#x4EF6;&#x7684;&#x56FE;&#x6807;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;svg</li>
+<li>plugin.js&#xFF1A;&#x58F0;&#x660E;&#x63D2;&#x4EF6;&#x7684;&#x7C7B;&#xFF0C;<a href="plugin.js.html">&#x8BE6;&#x7EC6;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</a></li>
+<li>types.js&#xFF1A;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x7684;&#x7C7B;&#x578B;</li>
+<li>instance.js&#xFF1A;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x63D2;&#x4EF6;&#x5B9E;&#x4F8B;</li>
+<li>behavior.js&#xFF1A;&#x5B9A;&#x4E49;&#x63D2;&#x4EF6;&#x7684;<a href="behavior.js.html">&#x884C;&#x4E3A;&#x4FE1;&#x606F;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../home.html" class="navigation navigation-prev " aria-label="Previous page: 主页">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="addon.json.html" class="navigation navigation-next " aria-label="Next page: addon.json">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"插件结构","level":"1.4.2","depth":2,"next":{"title":"addon.json","level":"1.4.3","depth":2,"path":"doc/plugin/guide/addon.json.md","ref":"doc/plugin/guide/addon.json.md","articles":[{"title":"effect","level":"1.4.3.1","depth":3,"path":"doc/plugin/guide/addon.effect.md","ref":"doc/plugin/guide/addon.effect.md","articles":[]}]},"previous":{"title":"主页","level":"1.4.1","depth":2,"path":"doc/plugin/home.md","ref":"doc/plugin/home.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback","search-title","anchorjs","splitter","expandable-chapters-small","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-issue-feedback":{"repo":"tidys/construct3-doc-zh","branch":"master"},"github":{"url":"https://github.com/tidys/construct3-doc-zh"},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","author":"xu_yanfeng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Construct3中文翻译文档","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null}},"gitbook":"*","description":"Construct3中文翻译文档","extension":null},"file":{"path":"doc/plugin/guide/c3addon.md","mtime":"2021-02-05T05:47:14.986Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-05T05:49:07.234Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-issue-feedback/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
